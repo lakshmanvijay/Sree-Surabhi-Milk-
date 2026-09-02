@@ -11,13 +11,14 @@ export const img = {
   heroFarm: (w: number) => commons("A beautiful photo of cows grazing in the field.jpg", w),
   heroFarmMisty: (w: number) => commons("A few cows grazing in India 2015.jpg", w),
   qualityCows: (w: number) => unsplash("1500595046743-cd271d694d30", w),
-  milkSplash: (w: number) => unsplash("1600788907416-456578634209", w),
   milkingMachine: (w: number) => commons("Cow milking machine in action DSC04132.jpg", w),
   cowFace: (w: number) => unsplash("1546445317-29f4545e9d53", w),
   labTesting: (w: number) => commons("Clinical Pathology Blood Testing Laboratory in Navi Mumbai, India.jpg", w),
   processingTanks: (w: number) => commons("Bright Dairy East China Central Factory 01.jpg", w),
   packagingLine: (w: number) => commons("10 heads stainless steel piston filler.jpg", w),
   deliveryTruck: (w: number) => unsplash("1601584115197-04ecc0da31d7", w),
+  galleryCows: (w: number) => unsplash("1596733430284-f7437764b1a9", w),
+  cheeseAssortment: (w: number) => unsplash("1486297678162-eb2a19b0a32d", w),
 };
 
 export const avatars = {

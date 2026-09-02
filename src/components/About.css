@@ -140,23 +140,6 @@
   font-weight: 500;
 }
 
-.about__splash {
-  position: absolute;
-  right: -60px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 320px;
-  opacity: 0.16;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.about__splash img {
-  width: 100%;
-  border-radius: 50%;
-  filter: grayscale(1);
-}
-
 @media (max-width: 900px) {
   .about__grid {
     grid-template-columns: 1fr;

@@ -40,10 +40,6 @@ export default function Quality() {
           </div>
         </Reveal>
       </div>
-
-      <div className="quality__splash" aria-hidden="true">
-        <img src={img.milkSplash(450)} alt="" loading="lazy" />
-      </div>
     </section>
   );
 }

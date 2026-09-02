@@ -79,20 +79,6 @@
   line-height: 1.55;
 }
 
-.quality__splash {
-  position: absolute;
-  right: -80px;
-  bottom: -60px;
-  width: 340px;
-  opacity: 0.14;
-  pointer-events: none;
-}
-
-.quality__splash img {
-  width: 100%;
-  filter: grayscale(1);
-}
-
 @media (max-width: 900px) {
   .quality__grid {
     grid-template-columns: 1fr;

@@ -54,12 +54,11 @@
 }
 
 .lightbox__image {
-  max-width: min(560px, 88vw);
+  max-width: min(900px, 88vw);
   max-height: 78vh;
   border-radius: var(--radius-md);
   object-fit: contain;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  image-rendering: -webkit-optimize-contrast;
 }
 
 .lightbox__caption {

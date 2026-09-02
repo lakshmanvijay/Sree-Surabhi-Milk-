@@ -1,21 +1,17 @@
 import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { img } from "../assets/images";
+import buildingImg from "../assets/brand/gallery-building.jpg";
 import Reveal from "./Reveal";
-import cowsImg from "../assets/brand/17_gallery_cows.png";
-import milkingImg from "../assets/brand/18_gallery_milking.png";
-import factoryWorkersImg from "../assets/brand/19_gallery_factory_workers.png";
-import milkFactoryImg from "../assets/brand/20_gallery_milk_factory.png";
-import dairyProductsImg from "../assets/brand/21_gallery_dairy_products.png";
-import buildingImg from "../assets/brand/22_gallery_building.png";
 import "./Gallery.css";
 
 const PHOTOS = [
-  { src: cowsImg, alt: "Cows grazing on the Sree Surabhi dairy farm" },
-  { src: milkingImg, alt: "Hygienic milking process at our farm" },
-  { src: factoryWorkersImg, alt: "Our quality assurance team at work" },
-  { src: milkFactoryImg, alt: "Our hygienic milk processing facility" },
-  { src: dairyProductsImg, alt: "Fresh dairy products, ready to deliver" },
-  { src: buildingImg, alt: "The Sree Surabhi Dairy processing facility" },
+  { src: img.galleryCows(800), alt: "Cows grazing on the Sree Surabhi dairy farm" },
+  { src: img.milkingMachine(800), alt: "Hygienic milking process at our farm" },
+  { src: img.labTesting(800), alt: "Our quality assurance team at work" },
+  { src: img.processingTanks(800), alt: "Our hygienic milk processing facility" },
+  { src: img.cheeseAssortment(800), alt: "Fresh dairy products, ready to deliver" },
+  { src: buildingImg, alt: "A modern dairy processing facility" },
 ];
 
 export default function Gallery() {

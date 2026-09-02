@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Play, Users, Award, HeartHandshake } from "lucide-react";
-import { img } from "../assets/images";
 import aboutFarmImg from "../assets/brand/03_about_farm_image.png";
 import Reveal from "./Reveal";
 import "./About.css";
@@ -57,10 +56,6 @@ export default function About() {
             ))}
           </div>
         </Reveal>
-      </div>
-
-      <div className="about__splash" aria-hidden="true">
-        <img src={img.milkSplash(500)} alt="" loading="lazy" />
       </div>
     </section>
   );
