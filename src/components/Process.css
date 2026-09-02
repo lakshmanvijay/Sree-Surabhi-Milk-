@@ -1,0 +1,131 @@
+.process {
+  background: var(--color-white);
+  padding: 96px 0;
+}
+
+.process__track {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+  overflow-x: auto;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.process__item-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.process__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+}
+
+.process__circle {
+  position: relative;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  padding: 5px;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.process__item:hover .process__circle {
+  transform: translateY(-6px);
+}
+
+.process__circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.process__num {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--color-white);
+}
+
+.process__item h3 {
+  font-size: 0.98rem;
+  margin-bottom: 6px;
+  color: var(--color-charcoal);
+}
+
+.process__item p {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.process__arrow {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin: 0 2px 60px;
+  opacity: 0.7;
+}
+
+@media (max-width: 1080px) {
+  .process__track {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .process {
+    padding: 72px 0;
+  }
+
+  .process__track {
+    flex-direction: column;
+    align-items: stretch;
+    overflow: visible;
+  }
+
+  .process__item-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .process__item {
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    gap: 18px;
+  }
+
+  .process__circle {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .process__arrow {
+    transform: rotate(90deg);
+    margin: 6px 0 6px 40px;
+  }
+}

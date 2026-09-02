@@ -1,0 +1,114 @@
+.testimonials {
+  background: var(--color-bg);
+  padding: 96px 0;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.review-card {
+  position: relative;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 30px 24px 24px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.review-card__quote {
+  color: var(--color-primary);
+  opacity: 0.18;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+}
+
+.review-card__stars {
+  display: flex;
+  gap: 3px;
+  color: #f2a33f;
+  margin-bottom: 14px;
+}
+
+.review-card p {
+  font-size: 0.9rem;
+  color: var(--color-charcoal);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.review-card__person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.review-card__person img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-card__person strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-charcoal);
+}
+
+.review-card__person span {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.testimonials__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.testimonials__dots button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-border);
+  cursor: pointer;
+  padding: 0;
+}
+
+.testimonials__dots button.is-active {
+  background: var(--color-primary);
+}
+
+@media (max-width: 1080px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonials {
+    padding: 72px 0;
+  }
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
